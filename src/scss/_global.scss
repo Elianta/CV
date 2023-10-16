@@ -1,0 +1,162 @@
+:root {
+    --text-main: #323232;
+    --text-accent: #000000;
+    --text-decor: #ab36ce;
+    --text-decor-hover: #f9934a;
+    --bg-main: #e4e4e4;
+}
+
+a,
+article,
+aside,
+b,
+blockquote,
+body,
+cite,
+code,
+dd,
+del,
+details,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+img,
+label,
+legend,
+li,
+nav,
+ol,
+p,
+pre,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+video,
+audio {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: "Overpass", "Arial", sans-serif;
+    color: var(--text-main);
+    background: var(--bg-main);
+}
+
+a {
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 0 4px;
+    font-weight: 700;
+    color: var(--text-decor);
+    text-decoration: none;
+    transition: color 0.3s linear;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:hover {
+        color: var(--text-decor-hover);
+    }
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    padding: 100px 0;
+
+    @include maxWidth($tablet) {
+        padding: 50px 0;
+    }
+
+    @include maxWidth($lMobile) {
+        padding: 20px 0;
+    }
+}
+
+.decor {
+    position: absolute;
+    z-index: 0;
+    width: 20vw;
+    height: 20vw;
+    min-width: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 400px;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    background: linear-gradient(45deg, #ff9e5b 0%, var(--text-decor-hover) 56%);
+    &--1 {
+        top: 20%;
+        right: calc((100vw - 1000px) / 2 - 12vw);
+
+        @include maxWidth($tablet) {
+            right: -80px;
+        }
+
+        @include maxWidth($mobile) {
+            top: 14%;
+            right: -50px;
+        }
+    }
+    &--2 {
+        border-radius: 49% 51% 70% 30% / 73% 63% 37% 27%;
+        left: calc((100vw - 1000px) / 2 - 12vw);
+        bottom: 5%;
+
+        @include maxWidth($tablet) {
+            left: -60px;
+        }
+
+        @include maxWidth($mobile) {
+            bottom: 29%;
+            left: -40px;
+        }
+    }
+    &--invert {
+        background: linear-gradient(45deg, var(--text-decor-hover) 44%, #ff9e5b 100%);
+    }
+}
