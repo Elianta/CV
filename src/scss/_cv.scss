@@ -222,6 +222,11 @@
             transform: rotate(45deg);
         }
     }
+
+    &--aligned li {
+        display: flex;
+        align-items: flex-start;
+    }
 }
 
 .cv__accent {
