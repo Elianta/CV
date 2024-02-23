@@ -394,6 +394,10 @@ a:hover {
   background: var(--text-main);
   transform: rotate(45deg);
 }
+.cv__list--aligned li {
+  display: flex;
+  align-items: flex-start;
+}
 
 .cv__accent {
   display: inline-flex;
