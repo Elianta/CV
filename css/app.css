@@ -237,7 +237,7 @@ a:hover {
 }
 
 .cv__title {
-  margin-bottom: 33px;
+  margin-bottom: 12px;
   font-size: 48px;
   line-height: 1.1;
   font-weight: 700;
@@ -269,12 +269,40 @@ a:hover {
 }
 
 .cv__prof {
+  margin-bottom: 20px;
   font-size: 16px;
 }
 @media only screen and (max-width: 768px) {
   .cv__prof {
     font-size: 14px;
   }
+}
+
+.cv__info {
+  display: inline-flex;
+  line-height: 1.3;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: none;
+}
+.cv__info .cv__icon {
+  margin-right: 4px;
+}
+
+.cv__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+}
+.cv__icon svg {
+  width: 100%;
+  height: auto;
+}
+.cv__icon--gh {
+  margin-bottom: 4px;
+  margin-left: 2px;
+  color: #24292f;
 }
 
 .cv__desc {
@@ -377,6 +405,7 @@ a:hover {
 }
 
 .cv__list {
+  line-height: 1.4;
   list-style-type: none;
 }
 .cv__list li {
@@ -396,7 +425,7 @@ a:hover {
 }
 .cv__list--aligned li {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .cv__accent {
