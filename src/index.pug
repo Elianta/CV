@@ -13,17 +13,21 @@ block content
                             <br /> 
                             | Kashina
                         p.cv__prof frontend developer (#[strong react.js])
+                        div.cv__info
+                            div.cv__icon
+                                include ./img/excl-mark.svg
+                            | Visa sponsorship is not required, B2B contract 
                     div.cv__desc
                         p 
-                        | As a Front-End Developer, I have #[strong 4 years] of experience in 
-                        | creating user interfaces.
+                            | As a Front-End Developer, I have #[strong 4 years] of experience in 
+                            | creating user interfaces.
                         p 
-                        | I'm eager to explore new opportunities and contribute to exciting 
-                        | projects. I'm enthusiastic about quality, 
-                        | collaboration, and user experience. 
+                            | I'm eager to explore new opportunities and contribute to exciting 
+                            | projects. I'm enthusiastic about quality, 
+                            | collaboration, and user experience. 
                         p 
-                        | #[strong Let's connect] and see how I can 
-                        | add value to your team and organization.
+                            | #[strong Let's connect] and see how I can 
+                            | add value to your team and organization.
 
 
                 .cv__content
@@ -51,9 +55,8 @@ block content
                                 li React.js, Next.js
                                 li Redux, RTK Query
                                 li HTML5, CSS3
-                                li Git
                                 li Pug, SASS, Styled-components
-                                li Gulp, Webpack
+                                li Git, Gulp, Webpack
                                 li Cross-browser Compatibility
                                 li Debugging, React Developer Tools
                                 li Jest, Vitest
@@ -62,17 +65,28 @@ block content
                             h2.cv__card.cv__subtitle Projects
                             ul.cv__list
                                 li
-                                    a(href='https://fh.by/' target='_blank') fh.by
+                                    a(href='https://admiral.dev.family/' target='_blank') Admiral
+                                    a.cv__icon.cv__icon--gh(href='https://github.com/dev-family/admiral' target='_blank')
+                                        include ./img/github-mark.svg
                                 li
-                                    a(href='https://terkan.ru/' target='_blank') terkan.ru
+                                    a(href='https://fh.by/' target='_blank') Fashion House
                                 li
                                     a(href='https://solana.multisender.app/' target='_blank') Solana Multisender
                                 li
                                     a(href='https://movado-group.ru/' target='_blank') movado-group.ru
                                 li
                                     a(href='https://alutech.ru' target='_blank') alutech.ru
+                        section.cv__section
+                            h2.cv__card.cv__subtitle Languages
+                            ul.cv__list
                                 li
-                                    a(href='https://bulba.com/' target='_blank') bulba.com
+                                    b Russian
+                                    | :
+                                    span.cv__accent Native
+                                li
+                                    b English
+                                    | :
+                                    span.cv__accent B2+ level
 
                     .cv__right
                         section.cv__section
@@ -86,13 +100,8 @@ block content
                                             time(datetime="2022-09") September 2022
                                             |   &ensp;&ndash;&ensp;
                                             time Present
-                                        p.cv__block
-                                        | Traveling;
-                                        | Relocation to Poland;
-                                        | Polish language course (A1);
-                                        | English language course (B2+);
-                                        | Passing NodeJS course;
-                                        | Job search;
+                                    p.cv__block
+                                        | Traveling; Relocation to Poland; Polish language course (A1); English language course (B2+); Passing NodeJS course; Job search;
                                 li
                                     p.cv__block
                                         a(href='https://dev.family/' target='_blank') dev.family
@@ -104,12 +113,14 @@ block content
                                             time(datetime="2020-04") April 2020
                                             |   &ensp;&ndash;&ensp;
                                             time(datetime="2022-09") September 2022
-                                        p.cv__block
+                                    p.cv__block
                                         | Team-lead position. Participation in the hiring process, conducted interviews, provided training, and code reviews.
-                                        p.cv__block 
-                                        | Architecting and maintaining a npm package for an internal product from scratch.
-                                        p.cv__block 
-                                        | Work on multiple diverse projects, ranging from multi-page websites to large-scale e-commerce platforms.
+                                    p.cv__block 
+                                        | Architecting and maintaining a 
+                                        a(href='https://admiral.dev.family/' target='_blank') npm package
+                                        | for an internal product from scratch. It is a front-end framework for creating a back office in React. It provides out-of-the-box components and tools that make developing an admin interface easy and fast.
+                                    p.cv__block 
+                                        | Working on multiple diverse projects, ranging from multi-page websites to large-scale e-commerce platforms, code optimization, and refactoring.
                                 li
                                     p.cv__block
                                         a(href='https://websecret.by' target='_blank') Web Secret
@@ -121,8 +132,10 @@ block content
                                             time(datetime="2019-08") August 2019
                                             |   &ensp;&ndash;&ensp;
                                             time(datetime="2020-04") April 2020
-                                        p.cv__block
-                                        | Creating online stores, news portals using React.js with Next.js framework.
+                                    p.cv__block
+                                        | Development of web applications written in JavaScript, React.js, and Next.js: online stores, news portals, etc. 
+                                    p.cv__block
+                                        | Implementation of user Interfaces, business logic, and designing API communication in cooperation with Backend Developers and Designers.
                                 li
                                     p.cv__block
                                         a(href='https://flex.media/' target='_blank') Flex.Media
@@ -134,23 +147,24 @@ block content
                                             time(datetime="2018-08") August 2018
                                             |   &ensp;&ndash;&ensp;
                                             time(datetime="2019-07") July 2019
-                                        p.cv__block
+                                    p.cv__block
                                         | Creating adaptive websites according to Figma Design
                                         | Template using HTML, CSS and JS, maintaining and improving
                                         | website.
                                 li
-                                    a.cv__block(href='https://www.acdlabs.com/' target='_blank') Advanced Chemistry Development, Inc.
-                                    | , Minsk, Belarus
                                     p.cv__block
-                                    b QA Engineer
-                                    | ,
-                                    span.cv__accent 
-                                        time(datetime="2014-03") March 2014
-                                        |   &ensp;&ndash;&ensp;
-                                        time(datetime="2017-08") August 2017
+                                        a(href='https://www.acdlabs.com/' target='_blank') Advanced Chemistry Development, Inc.
+                                        | , Minsk, Belarus
                                     p.cv__block
-                                    | Testing of the software solutions for scientists in
-                                    | chemical, biochemical and pharmaceutical R&amp;D.
+                                        b QA Engineer
+                                        | ,
+                                        span.cv__accent 
+                                            time(datetime="2014-03") March 2014
+                                            |   &ensp;&ndash;&ensp;
+                                            time(datetime="2017-08") August 2017
+                                    p.cv__block
+                                        | Testing of the software solutions for scientists in
+                                        | chemical, biochemical and pharmaceutical R&amp;D.
 
                         section.cv__section
                             h2.cv__card.cv__subtitle Education
@@ -162,37 +176,11 @@ block content
                                     a(href='https://app.rs.school/certificate/8peneto7' target='_blank') The Rolling Scopes School
                                 li
                                     span.cv__accent 
-                                        time(datetime="2017") 2017:
-                                    |  JavaScript basic course
-                                    a(href='https://assets.htmlacademy.ru/certificates/intensive/49/84441.pdf' target='_blank') htmlacademy.ru
-                                li
-                                    span.cv__accent
-                                        time(datetime="2016") 2016:
-                                    |  HTML &amp; CSS advanced course
-                                    a(href='https://assets.htmlacademy.ru/certificates/intensive/30/84441.pdf' target='_blank') htmlacademy.ru
-                                li
-                                    span.cv__accent 
-                                        time(datetime="2015") 2015:
-                                    |  HTML &amp; CSS basic course
-                                    a(href='https://assets.htmlacademy.ru/certificates/intensive/10/84441.pdf' target='_blank') htmlacademy.ru
-                                li
-                                    span.cv__accent 
                                         time(datetime="2010") 2010
                                         |   &ensp;&ndash;&ensp;
                                         time(datetime="2015") 2015:
                                     div 
                                         p
-                                        |   Belarusian State University - Minsk, Belarus
+                                            |   Belarusian State University - Minsk, Belarus
                                         p 
-                                        | Bachelor's degree in Analytical Chemistry
-                        section.cv__section
-                            h2.cv__card.cv__subtitle Languages
-                            ul.cv__list
-                                li
-                                    b Russian
-                                    | :
-                                    span.cv__accent Native
-                                li
-                                    b English
-                                    | :
-                                    span.cv__accent B2 level
+                                            | Bachelor's degree in Analytical Chemistry
