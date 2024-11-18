@@ -10,8 +10,7 @@ block content
                     div
                         h1.cv__title 
                             span.name Alexandra 
-                            <br /> 
-                            | Kashina
+                            span Kashina
                         p.cv__prof frontend developer (#[strong react.js])
                         div.cv__info
                             div.cv__icon
@@ -19,12 +18,10 @@ block content
                             | Visa sponsorship is not required, B2B contract 
                     div.cv__desc
                         p 
-                            | As a Front-End Developer, I have #[strong 4 years] of experience in 
+                            | As a Front-End Developer, I have #[strong over 5 years] of experience in 
                             | creating user interfaces.
                         p 
-                            | I'm eager to explore new opportunities and contribute to exciting 
-                            | projects. I'm enthusiastic about quality, 
-                            | collaboration, and user experience. 
+                            | I specialize in building complex systems, including e-commerce platforms and administrative tools, with a strong focus on user experience, responsiveness, and code quality.
                         p 
                             | #[strong Let's connect] and see how I can 
                             | add value to your team and organization.
@@ -54,8 +51,8 @@ block content
                                 li JavaScript, TypeScript
                                 li React.js, Next.js
                                 li Redux, RTK Query
-                                li HTML5, CSS3
-                                li Pug, SASS, Styled-components
+                                li HTML5, CSS3, SASS/SCSS
+                                li Tailwind CSS, Styled-components
                                 li Git, Gulp, Webpack
                                 li Cross-browser Compatibility
                                 li Debugging, React Developer Tools
@@ -63,7 +60,7 @@ block content
 
                         section.cv__section
                             h2.cv__card.cv__subtitle Projects
-                            ul.cv__list
+                            ul.cv__list.cv__list--projects
                                 li
                                     a(href='https://admiral.dev.family/' target='_blank') Admiral
                                     a.cv__icon.cv__icon--gh(href='https://github.com/dev-family/admiral' target='_blank')
@@ -87,6 +84,22 @@ block content
                                     b English
                                     | :
                                     span.cv__accent B2+ level
+                        section.cv__section
+                            h2.cv__card.cv__subtitle Education
+                            ul.cv__list
+                                li
+                                    span.cv__accent
+                                        time(datetime="2023-09") 2023
+                                    a(href='https://app.rs.school/certificate/8peneto7' target='_blank') NodeJS course 
+                                    |  &ndash; The Rolling Scopes School 
+
+                                li
+                                    span.cv__accent 
+                                        time(datetime="2010") 2010
+                                        |   &ensp;&ndash;&ensp;
+                                        time(datetime="2015") 2015
+                                    span
+                                        | Belarusian State University &ndash; Bachelor's degree in Analytical Chemistry
 
                     .cv__right
                         section.cv__section
@@ -94,48 +107,69 @@ block content
                             ul.cv__list
                                 li
                                     p.cv__block
-                                        b Sabbatical
+                                        b.cv__company Freelance (Self-employed)
+                                        | , Warsaw, Poland
+                                    p.cv__block
+                                        b Frontend Developer (React.js)
+                                        | ,
+                                        span.cv__accent 
+                                            time(datetime="2024-01") January 2024
+                                            |   &ensp;&ndash;&ensp;
+                                            time Present
+                                    ul.cv__list.cv__list--inner
+                                        li
+                                            | Designed and implemented a complex electronic queue management system, consisting of applications for terminals, operators, and administrative panels.
+                                        li 
+                                            | Developed a desktop application enabling users to print tickets for selected procedures, using Electron.js and WebSockets for real-time updates of queue availability.
+                                        li 
+                                            | Integrated advanced ticket-handling features, such as calling, redirecting, postponing, and finishing, with live updates through WebSockets.
+                                        li 
+                                            | Created a customizable ticket design interface, allowing administrators to configure themes and preview changes instantly via SVG rendering.
+                                        li 
+                                            | Developed an authentication system with secure login/logout, user data management, and protected routes.
+                                        li 
+                                            | Implemented a reusable modal system, supporting multistep forms for enhanced user interactions.
+                                li
+                                    p.cv__block
+                                        b.cv__company Sabbatical
                                         | ,
                                         span.cv__accent 
                                             time(datetime="2022-09") September 2022
                                             |   &ensp;&ndash;&ensp;
-                                            time Present
-                                    p.cv__block
-                                        | Traveling; Relocation to Poland; Polish language course (A1); English language course (B2+); Passing NodeJS course; Job search;
+                                            time(datetime="2024-01") January 2024
+                                    ul.cv__list.cv__list--inner
+                                        li
+                                            | Relocated to Poland and actively pursued professional development.
+                                        li
+                                            | Completed language courses: Polish (A1), English (B2+).
+                                        li
+                                            | Completed a Node.js course, gaining expertise in backend development.
                                 li
                                     p.cv__block
                                         a(href='https://dev.family/' target='_blank') dev.family
                                         | , Minsk, Belarus
                                     p.cv__block
-                                        b Frontend Developer
-                                        | ,
-                                        span.cv__accent 
-                                            time(datetime="2020-04") April 2020
-                                            |   &ensp;&ndash;&ensp;
-                                            time(datetime="2022-09") September 2022
-                                    p.cv__block
-                                        | Team-lead position. Participation in the hiring process, conducted interviews, provided training, and code reviews.
-                                    p.cv__block 
-                                        | Architecting and maintaining a 
-                                        a(href='https://admiral.dev.family/' target='_blank') npm package
-                                        | for an internal product from scratch. It is a front-end framework for creating a back office in React. It provides out-of-the-box components and tools that make developing an admin interface easy and fast.
-                                    p.cv__block 
-                                        | Working on multiple diverse projects, ranging from multi-page websites to large-scale e-commerce platforms, code optimization, and refactoring.
-                                li
-                                    p.cv__block
-                                        a(href='https://websecret.by' target='_blank') Web Secret
-                                        | , Minsk, Belarus
-                                    p.cv__block
-                                        b Frontend Developer
+                                        b Frontend Developer (React.js)
                                         | ,
                                         span.cv__accent 
                                             time(datetime="2019-08") August 2019
                                             |   &ensp;&ndash;&ensp;
-                                            time(datetime="2020-04") April 2020
-                                    p.cv__block
-                                        | Development of web applications written in JavaScript, React.js, and Next.js: online stores, news portals, etc. 
-                                    p.cv__block
-                                        | Implementation of user Interfaces, business logic, and designing API communication in cooperation with Backend Developers and Designers.
+                                            time(datetime="2022-09") September 2022
+                                    ul.cv__list.cv__list--inner
+                                        li
+                                            | Led recruitment efforts, conducting technical interviews, onboarding, and training junior developers, while maintaining high-quality standards through code reviews.
+                                        li 
+                                            | Architected and maintained a 
+                                            a(href='https://admiral.dev.family/' target='_blank') npm package
+                                            | , streamlining the creation of CRUD (create/read/update/delete) pages. Features included dynamic tables, data manipulation forms, advanced filters, sorting, and support for responsive design, localization, and customizable themes.
+                                        li 
+                                            | Developed a Real Estate Portal for property buyers and renters. Features included a property catalog with filters, sorting, and product cards, image galleries, an interactive map with area-based search, multi-select search forms, an authentication system, user wishlists, and dynamic property pages.
+                                        li 
+                                            | Developed a blockchain project for sending Sol and SPL tokens within the Solana network. Features included CSV import for bulk transfers, Phantom/Solflare wallet integration, and optimized transaction processing.
+                                        li 
+                                            | Developed an e-commerce platform for global fashion brands with features like product catalogs, advanced filters, sorting, and product pages with image galleries. Included cart management, a checkout form, recommendations, user wishlists, customizable brand pages, and an authentication system for user data management.
+                                        li 
+                                            | Usually worked in cooperation with Backend Developer, Designer, and Product Manager.
                                 li
                                     p.cv__block
                                         a(href='https://flex.media/' target='_blank') Flex.Media
@@ -147,10 +181,11 @@ block content
                                             time(datetime="2018-08") August 2018
                                             |   &ensp;&ndash;&ensp;
                                             time(datetime="2019-07") July 2019
-                                    p.cv__block
-                                        | Creating adaptive websites according to Figma Design
-                                        | Template using HTML, CSS and JS, maintaining and improving
-                                        | website.
+                                    ul.cv__list.cv__list--inner
+                                        li
+                                            | Built adaptive landing pages and corporate multipage websites based on Figma designs, ensuring responsiveness and cross-browser compatibility.
+                                        li
+                                            | Enhanced user experience by implementing SVG animations, parallax effects, and smooth page transitions.
                                 li
                                     p.cv__block
                                         a(href='https://www.acdlabs.com/' target='_blank') Advanced Chemistry Development, Inc.
@@ -162,25 +197,8 @@ block content
                                             time(datetime="2014-03") March 2014
                                             |   &ensp;&ndash;&ensp;
                                             time(datetime="2017-08") August 2017
-                                    p.cv__block
-                                        | Testing of the software solutions for scientists in
-                                        | chemical, biochemical and pharmaceutical R&amp;D.
+                                    ul.cv__list.cv__list--inner
+                                        li
+                                            | Tested the software solutions for scientists in chemical, biochemical and pharmaceutical R&amp;D.
 
-                        section.cv__section
-                            h2.cv__card.cv__subtitle Education
-                            ul.cv__list.cv__list--aligned
-                                li
-                                    span.cv__accent
-                                        time(datetime="2023-09") 2023:
-                                    |  NodeJS
-                                    a(href='https://app.rs.school/certificate/8peneto7' target='_blank') The Rolling Scopes School
-                                li
-                                    span.cv__accent 
-                                        time(datetime="2010") 2010
-                                        |   &ensp;&ndash;&ensp;
-                                        time(datetime="2015") 2015:
-                                    div 
-                                        p
-                                            |   Belarusian State University - Minsk, Belarus
-                                        p 
-                                            | Bachelor's degree in Analytical Chemistry
+
